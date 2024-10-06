@@ -3,6 +3,8 @@
     src: url(../fonts/norse-bold.woff2);
 }
 
+/* ASIDE */
+
 body {
     margin: 0;
     display: flex;
@@ -51,6 +53,27 @@ a {
     color: white;
 }
 
+/* MAIN */
+
 main {
-    width: 100%;;
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.para {
+    padding: 5rem 4rem 1rem 2rem;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+section {
+    background-color: #fff;
+    box-shadow: 0 1px 3px black;
+    padding: .5rem 2rem;
+    color: #444
+}
+h2 {
+    margin: 0;
+    font-size: 1rem;
+    padding-bottom: .5rem;
 }
