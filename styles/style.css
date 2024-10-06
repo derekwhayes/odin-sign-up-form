@@ -77,3 +77,23 @@ h2 {
     font-size: 1rem;
     padding-bottom: .5rem;
 }
+
+.grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: .5rem;
+    font-weight: 600;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+}
