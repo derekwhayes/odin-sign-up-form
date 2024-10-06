@@ -54,6 +54,7 @@ a {
 }
 
 /* MAIN */
+/* TOP */
 
 main {
     width: 100%;
@@ -66,10 +67,12 @@ main {
     font-weight: 600;
 }
 
+/* FORM */
+
 section {
     background-color: #fff;
-    box-shadow: 0 1px 3px black;
-    padding: .5rem 2rem;
+    box-shadow: 0 1px 3px rgb(185, 185, 185);
+    padding: .5rem 7rem 1rem 2rem;
     color: #444
 }
 h2 {
@@ -96,4 +99,38 @@ label {
 
 input {
     border: 1px solid #E5E7EB;
+    font-size: .7rem;
+    padding: .23rem;
+    width: 10rem;
+    border-radius: 3px;
+}
+
+/* BOTTOM */
+
+button {
+    padding: .7em 1.9rem;
+    border-radius: 5px;
+    margin: 2rem;
+    border: none;
+    color: white;
+    background-color: #757575;
+    font-size: .7rem;
+    font-weight: 700;
+}
+
+.sign-in {
+    display: flex;
+    align-items: center;
+    gap: .1em;
+    font-size: .7rem;
+}
+
+.sign-in p {
+    margin: 0;
+    padding-left: 2rem;
+}
+
+.sign-in a{
+    color: red;
+    text-decoration: none;
 }
