@@ -6,6 +6,7 @@ const styleElem = document.head.appendChild(document.createElement("style"));
 function onPasswordEntry() {
     console.log(password.value, passwordConfirm.value);
     if (password.value !== passwordConfirm.value) {
+        password.after("");
         password.after("* Passwords must match")
 
         password.style.borderColor = "red";
