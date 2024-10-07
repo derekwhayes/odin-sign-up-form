@@ -110,7 +110,12 @@ input {
     border-radius: 3px;
 }
 
-
+.password-warning {
+    color: red;
+    margin: 0;
+    font-size: .5rem;
+    visibility: hidden;
+}
 
 /* BOTTOM */
 

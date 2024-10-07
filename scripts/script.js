@@ -1,20 +1,19 @@
 const password = document.querySelector("#password");
 const passwordConfirm = document.querySelector("#password-confirm");
-const styleElem = document.head.appendChild(document.createElement("style"));
+const passwordWarning = document.querySelector(".password-warning");
 
 
 function onPasswordEntry() {
     console.log(password.value, passwordConfirm.value);
     if (password.value !== passwordConfirm.value) {
-        password.after("");
-        password.after("* Passwords must match")
-
+        passwordWarning.style.visibility = "visible";
         password.style.borderColor = "red";
         passwordConfirm.style.borderColor = "red";
     }
     else {
-        // styleElem.innerHTML = "";
-
+        passwordWarning.style.visibility = "hidden";
+        password.style.borderColor = "#444";
+        passwordConfirm.style.borderColor = "#444";
     }
 }
 
