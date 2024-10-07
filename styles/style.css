@@ -78,7 +78,7 @@ section {
     background-color: #fff;
     box-shadow: 0 1px 3px rgb(185, 185, 185);
     padding: .5rem 7rem 1rem 2rem;
-    color: #444
+    color: #444;
 }
 h2 {
     margin: 0;
@@ -110,6 +110,17 @@ input {
     border-radius: 3px;
 }
 
+input[type="email"]:invalid {
+    border-color: red;
+}
+
+input:focus {
+    outline: none;
+    border-color: blue;
+    box-shadow: 1px 1px 3px black;
+}
+
+
 .password-warning {
     color: red;
     margin: 0;
@@ -128,6 +139,11 @@ button {
     background-color: #757575;
     font-size: .7rem;
     font-weight: 700;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #222;
 }
 
 .sign-in {
